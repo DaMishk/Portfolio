@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeth Mendoza | Junior Web Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<div class="hero">
+<img src="images/jit.png" class="profile-image">
+
+<div class="hero-name">
+<h1>Jeth Mendoza</h1>
+<p>Junior Web Developer | Intern</p>
+<div class="contact-info">
+<span>📍 Sta. Maria, Bulacan</span>
+<span>📧 jettjet11@gmail.com</span>
+<span>📱 +63 9777778330</span>
+</div>
+</div>
+
+<div class="hero-about">
+<p>
+Computer Science student graduating in 2026 with a focus on backend systems,
+databases, and scalable applications.
+</p>
+<br>
+<p>
+Currently seeking an internship where I can apply my skills and continue learning
+through practical projects.
+</p>
+</div>
+
+</div>
+</header>
+
+<section>
+<h2>Tech Stack</h2>
+<div class="tech-grid">
+<div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"><p>PHP</p></div>
+<div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><p>MySQL</p></div>
+<div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><p>JavaScript</p></div>
+<div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"><p>C#</p></div>
+</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+<div class="projects-grid">
+
+<!-- Readify -->
+<div class="project-card" onclick="openModal('readify')">
+<img src="images/Readify1.png" class="project-preview" alt="Readify Preview">
+<div class="project-card-content">
+<h3>Readify</h3>
+<p>Digital library mobile wireframe (Figma)</p>
+</div>
+</div>
+
+<!-- TheraGames -->
+<div class="project-card" onclick="openModal('theragames')">
+<img src="images/Thera1.png" class="project-preview" alt="TheraGames Preview">
+<div class="project-card-content">
+<h3>TheraGames</h3>
+<p>AI & Backend Development | Thesis Project</p>
+</div>
+</div>
+
+<!-- Artlib -->
+<div class="project-card" onclick="openModal('artlib')">
+<img src="images/Artlib3.png" class="project-preview" alt="Artlib Preview">
+<div class="project-card-content">
+<h3>Artlib</h3>
+<p>Fiverr/Shopee-inspired platform | PHP & MySQL practice</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 Jeth Mendoza</p>
+</footer>
+
+</div>
+
+<!-- MODALS -->
+<!-- Readify -->
+<div class="modal" id="readifyModal">
+<div class="modal-content">
+<span class="modal-close" onclick="closeModal('readify')">&times;</span>
+
+<div class="carousel readify-carousel">
+<div class="carousel-container">
+<div class="carousel-track" id="readifyCarousel">
+<img src="images/readify2.png" alt="Readify Screen 1">
+<img src="images/readify3.png" alt="Readify Screen 2">
+<img src="images/readify4.png" alt="Readify Screen 3">
+<img src="images/Readify5.png" alt="Readify Screen 4">
+</div>
+</div>
+<button class="carousel-btn prev" onclick="moveSlide('readify', -1)">❮</button>
+<button class="carousel-btn next" onclick="moveSlide('readify', 1)">❯</button>
+<div class="carousel-dots" id="readifyDots">
+<span class="dot active" onclick="currentSlide('readify', 0)"></span>
+<span class="dot" onclick="currentSlide('readify', 1)"></span>
+<span class="dot" onclick="currentSlide('readify', 2)"></span>
+<span class="dot" onclick="currentSlide('readify', 3)"></span>
+</div>
+</div>
+
+<div class="modal-info">
+<h3>Readify</h3>
+<p>
+Readify is a mobile digital library platform allowing users to collect,
+purchase, and read books anytime and anywhere. This project focuses on
+clean UI/UX and smooth user flow.
+</p>
+<a href="https://www.figma.com/proto/SFx2qKkqQRn4JJt06DVb75/Finals-Tp?node-id=28-2&p=f&t=Cxt6ifjbV50ByjNQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A6&show-proto-sidebar=1" target="_blank">View on Figma →</a>
+</div>
+</div>
+</div>
+
+<!-- TheraGames -->
+<div class="modal" id="theragamesModal">
+<div class="modal-content">
+<span class="modal-close" onclick="closeModal('theragames')">&times;</span>
+
+<div class="carousel theragames-carousel">
+<div class="carousel-container">
+<div class="carousel-track" id="theragamesCarousel">
+<img src="images/Thera2.png" alt="TheraGames Screen 1">
+<img src="images/Thera3.png" alt="TheraGames Screen 2">
+<img src="images/Thera4.png" alt="TheraGames Screen 3">
+</div>
+</div>
+<button class="carousel-btn prev" onclick="moveSlide('theragames', -1)">❮</button>
+<button class="carousel-btn next" onclick="moveSlide('theragames', 1)">❯</button>
+<div class="carousel-dots" id="theragamesDots">
+<span class="dot active" onclick="currentSlide('theragames', 0)"></span>
+<span class="dot" onclick="currentSlide('theragames', 1)"></span>
+<span class="dot" onclick="currentSlide('theragames', 2)"></span>
+</div>
+</div>
+
+<div class="modal-info">
+<h3>TheraGames — AI & Backend Developer</h3>
+<p style="color:#aaa; margin-bottom:15px;">Thesis Project · STI College Sta. Maria Bulacan</p>
+<p>
+AI-powered Learning Management System gaming platform focused on educating
+through interactive and adaptive gameplay.
+</p>
+<h4 style="margin-top:20px; color:#e6c86e;">Key Responsibilities</h4>
+<ul>
+<li>Integrated AI models using Javascript libraries into backend systems</li>
+<li>Implemented Gamemode Logic</li>
+<li>Collaborated on security and backend logic</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Artlib -->
+<div class="modal" id="artlibModal">
+<div class="modal-content">
+<span class="modal-close" onclick="closeModal('artlib')">&times;</span>
+
+<div class="carousel artlib-carousel">
+<div class="carousel-container">
+<div class="carousel-track" id="artlibCarousel">
+<img src="images/Artlib2.png" alt="Artlib Screen 1">
+<img src="images/Artlib4.png" alt="Artlib Screen 2">
+<img src="images/Artlib5.png" alt="Artlib Screen 3">
+<img src="images/Artlib6.png" alt="Artlib Screen 4">
+</div>
+</div>
+<button class="carousel-btn prev" onclick="moveSlide('artlib', -1)">❮</button>
+<button class="carousel-btn next" onclick="moveSlide('artlib', 1)">❯</button>
+<div class="carousel-dots" id="artlibDots">
+<span class="dot active" onclick="currentSlide('artlib', 0)"></span>
+<span class="dot" onclick="currentSlide('artlib', 1)"></span>
+<span class="dot" onclick="currentSlide('artlib', 2)"></span>
+<span class="dot" onclick="currentSlide('artlib', 3)"></span>
+</div>
+</div>
+
+<div class="modal-info">
+<h3>Artlib — PHP & MySQL Practice</h3>
+<p style="color:#aaa; margin-bottom:15px;">Practice Project | Implemented CRUD, User Levels, OTPs & Email Notifications</p>
+<p>
+Artlib is a Fiverr/Shopee-inspired platform built to practice user management, multi-level roles, authentication, and real-time notifications using PHP and MySQL.
+</p>
+<h4 style="margin-top:20px; color:#e6c86e;">Key Features & Learning</h4>
+<ul>
+<li>Multi-level user system with CRUD operations</li>
+<li>Implemented OTP verification and email confirmations</li>
+<li>Learned PHP & MySQL integration and backend logic</li>
+<li>Practice with dynamic dashboards, notifications, and user flow</li>
+</ul>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

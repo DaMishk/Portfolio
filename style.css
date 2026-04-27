@@ -11,23 +11,23 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
-    padding: 30px;
+    padding: 40px 60px;
 }
 
 /* HERO */
 header {
     background: #151515;
     border-radius: 20px;
-    padding: 60px 40px;
-    margin-bottom: 40px;
+    padding: 72px 56px;
+    margin-bottom: 48px;
 }
 
 .hero {
     display: grid;
     grid-template-columns: 220px 1fr 1.2fr;
-    gap: 40px;
+    gap: 52px;
     align-items: center;
 }
 
@@ -51,50 +51,56 @@ header {
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    margin-top: 6px;
 }
 
 .hero-about {
     color: #ccc;
-    line-height: 1.7;
+    line-height: 1.85;
 }
 
 /* SECTIONS */
 section {
     background: #151515;
     border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 40px;
+    padding: 56px 52px;
+    margin-bottom: 48px;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 }
 
 /* TECH STACK */
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 28px;
 }
 
 .tech-item {
     background: #1f1f1f;
-    padding: 25px;
+    padding: 32px 20px;
     border-radius: 15px;
     text-align: center;
 }
 
 .tech-item img {
-    width: 48px;
+    width: 54px;
+    margin-bottom: 4px;
 }
 
-/* PROJECTS */
-.projects-grid {
+.tech-item p {
+    margin-top: 10px;
+}
+
+/* PROJECTS - strict 2 columns always */
+#projects .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
 }
 
 .project-card {
@@ -111,21 +117,22 @@ h2 {
 
 .project-preview {
     width: 100%;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
 }
 
 .project-card-content {
-    padding: 25px;
+    padding: 28px 26px;
 }
 
 .project-card-content h3 {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .project-card-content p {
     color: #aaa;
     font-size: 0.95em;
+    line-height: 1.6;
 }
 
 /* MODAL */
@@ -146,8 +153,8 @@ h2 {
 .modal-content {
     background: #151515;
     border-radius: 20px;
-    padding: 30px;
-    max-width: 950px; /* increased width */
+    padding: 44px 40px;
+    max-width: 950px;
     width: 90%;
     max-height: 90vh;
     overflow-y: auto;
@@ -182,7 +189,7 @@ h2 {
 /* CAROUSEL */
 .carousel {
     position: relative;
-    margin: 0 auto 25px;
+    margin: 0 auto 30px;
 }
 
 .readify-carousel {
@@ -190,7 +197,8 @@ h2 {
 }
 
 .theragames-carousel,
-.artlib-carousel {
+.artlib-carousel,
+.newproject-carousel {
     width: 100%;
     max-width: 800px;
 }
@@ -243,7 +251,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 .dot {
@@ -262,7 +270,17 @@ h2 {
 /* MODAL INFO */
 .modal-info {
     color: #ccc;
-    line-height: 1.7;
+    line-height: 1.8;
+    padding-top: 8px;
+}
+
+.modal-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.modal-info p {
+    margin-bottom: 10px;
 }
 
 .modal-info a {
@@ -278,14 +296,18 @@ h2 {
 
 .modal-info ul {
     margin-left: 20px;
-    line-height: 1.9;
+    line-height: 2;
+}
+
+.modal-info ul li {
+    margin-bottom: 4px;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     color: #777;
-    padding: 20px;
+    padding: 32px 20px;
 }
 
 /* RESPONSIVE */
@@ -293,5 +315,9 @@ footer {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    #projects .projects-grid {
+        grid-template-columns: 1fr;
     }
 }

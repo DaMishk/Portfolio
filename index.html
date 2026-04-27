@@ -10,7 +10,7 @@
 
 <div class="container">
 
-<header>
+<header id="home">
 <div class="hero">
 <img src="images/jit.png" class="profile-image">
 
@@ -26,12 +26,11 @@
 
 <div class="hero-about">
 <p>
-Computer Science student graduating in 2026 with a focus on backend systems,
-databases, and scalable applications.
+Computer Science student graduating in 2026 with experience in backend development, databases, and building small web applications. Still learning a lot, but I enjoy working on real projects and picking up new things along the way. 
 </p>
 <br>
 <p>
-Currently seeking an internship where I can apply my skills and continue learning
+Currently seeking an Junior Web Developer Position where I can apply my skills and continue learning
 through practical projects.
 </p>
 </div>
@@ -39,7 +38,7 @@ through practical projects.
 </div>
 </header>
 
-<section>
+<section id="tech">
 <h2>Tech Stack</h2>
 <div class="tech-grid">
 <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"><p>PHP</p></div>
@@ -49,11 +48,10 @@ through practical projects.
 </div>
 </section>
 
-<section>
+<section id="projects">
 <h2>Projects</h2>
 <div class="projects-grid">
 
-<!-- Readify -->
 <div class="project-card" onclick="openModal('readify')">
 <img src="images/Readify1.png" class="project-preview" alt="Readify Preview">
 <div class="project-card-content">
@@ -62,7 +60,6 @@ through practical projects.
 </div>
 </div>
 
-<!-- TheraGames -->
 <div class="project-card" onclick="openModal('theragames')">
 <img src="images/Thera1.png" class="project-preview" alt="TheraGames Preview">
 <div class="project-card-content">
@@ -71,12 +68,19 @@ through practical projects.
 </div>
 </div>
 
-<!-- Artlib -->
 <div class="project-card" onclick="openModal('artlib')">
 <img src="images/Artlib3.png" class="project-preview" alt="Artlib Preview">
 <div class="project-card-content">
 <h3>Artlib</h3>
 <p>Fiverr/Shopee-inspired platform | PHP & MySQL practice</p>
+</div>
+</div>
+
+<div class="project-card" onclick="openModal('newproject')">
+<img src="images/xpense.png" class="project-preview" alt="New Project Preview">
+<div class="project-card-content">
+<h3>Xpense - Expense Tracker</h3>
+<p>A personalized expense tracking website | Group Project</p>
 </div>
 </div>
 
@@ -90,11 +94,9 @@ through practical projects.
 </div>
 
 <!-- MODALS -->
-<!-- Readify -->
 <div class="modal" id="readifyModal">
 <div class="modal-content">
 <span class="modal-close" onclick="closeModal('readify')">&times;</span>
-
 <div class="carousel readify-carousel">
 <div class="carousel-container">
 <div class="carousel-track" id="readifyCarousel">
@@ -113,24 +115,17 @@ through practical projects.
 <span class="dot" onclick="currentSlide('readify', 3)"></span>
 </div>
 </div>
-
 <div class="modal-info">
 <h3>Readify</h3>
-<p>
-Readify is a mobile digital library platform allowing users to collect,
-purchase, and read books anytime and anywhere. This project focuses on
-clean UI/UX and smooth user flow.
-</p>
+<p>Readify is a mobile digital library platform allowing users to collect, purchase, and read books anytime and anywhere.</p>
 <a href="https://www.figma.com/proto/SFx2qKkqQRn4JJt06DVb75/Finals-Tp?node-id=28-2&p=f&t=Cxt6ifjbV50ByjNQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A6&show-proto-sidebar=1" target="_blank">View on Figma →</a>
 </div>
 </div>
 </div>
 
-<!-- TheraGames -->
 <div class="modal" id="theragamesModal">
 <div class="modal-content">
 <span class="modal-close" onclick="closeModal('theragames')">&times;</span>
-
 <div class="carousel theragames-carousel">
 <div class="carousel-container">
 <div class="carousel-track" id="theragamesCarousel">
@@ -147,14 +142,10 @@ clean UI/UX and smooth user flow.
 <span class="dot" onclick="currentSlide('theragames', 2)"></span>
 </div>
 </div>
-
 <div class="modal-info">
 <h3>TheraGames — AI & Backend Developer</h3>
 <p style="color:#aaa; margin-bottom:15px;">Thesis Project · STI College Sta. Maria Bulacan</p>
-<p>
-AI-powered Learning Management System gaming platform focused on educating
-through interactive and adaptive gameplay.
-</p>
+<p>AI-powered Learning Management System gaming platform focused on educating through interactive and adaptive gameplay.</p>
 <h4 style="margin-top:20px; color:#e6c86e;">Key Responsibilities</h4>
 <ul>
 <li>Integrated AI models using Javascript libraries into backend systems</li>
@@ -165,11 +156,9 @@ through interactive and adaptive gameplay.
 </div>
 </div>
 
-<!-- Artlib -->
 <div class="modal" id="artlibModal">
 <div class="modal-content">
 <span class="modal-close" onclick="closeModal('artlib')">&times;</span>
-
 <div class="carousel artlib-carousel">
 <div class="carousel-container">
 <div class="carousel-track" id="artlibCarousel">
@@ -188,19 +177,52 @@ through interactive and adaptive gameplay.
 <span class="dot" onclick="currentSlide('artlib', 3)"></span>
 </div>
 </div>
-
 <div class="modal-info">
 <h3>Artlib — PHP & MySQL Practice</h3>
 <p style="color:#aaa; margin-bottom:15px;">Practice Project | Implemented CRUD, User Levels, OTPs & Email Notifications</p>
-<p>
-Artlib is a Fiverr/Shopee-inspired platform built to practice user management, multi-level roles, authentication, and real-time notifications using PHP and MySQL.
-</p>
+<p>Artlib is a Fiverr/Shopee-inspired platform built to practice user management, multi-level roles, authentication, and real-time notifications.</p>
 <h4 style="margin-top:20px; color:#e6c86e;">Key Features & Learning</h4>
 <ul>
 <li>Multi-level user system with CRUD operations</li>
 <li>Implemented OTP verification and email confirmations</li>
 <li>Learned PHP & MySQL integration and backend logic</li>
 <li>Practice with dynamic dashboards, notifications, and user flow</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="modal" id="newprojectModal">
+<div class="modal-content">
+<span class="modal-close" onclick="closeModal('newproject')">&times;</span>
+<div class="carousel newproject-carousel">
+<div class="carousel-container">
+<div class="carousel-track" id="newprojectCarousel">
+<img src="images/xpense.png" alt="New Project Screen 1">
+<img src="images/profexpense.png" alt="New Project Screen 2">
+<img src="images/goals tab.png" alt="New Project Screen 3">
+<img src="images/expenses.png" alt="New Project Screen 4">
+</div>
+</div>
+<button class="carousel-btn prev" onclick="moveSlide('newproject', -1)">❮</button>
+<button class="carousel-btn next" onclick="moveSlide('newproject', 1)">❯</button>
+<div class="carousel-dots" id="newprojectDots">
+<span class="dot active" onclick="currentSlide('newproject', 0)"></span>
+<span class="dot" onclick="currentSlide('newproject', 1)"></span>
+<span class="dot" onclick="currentSlide('newproject', 2)"></span>
+<span class="dot" onclick="currentSlide('newproject', 3)"></span>
+</div>
+</div>
+<div class="modal-info">
+<h3>Xpense - Expense Tracker</h3>
+<p style="color:#aaa; margin-bottom:15px;">Practice Project | Implemented CRUD, OTPs & Email Notifications</p>
+<p>Xpense is an expense tracking web application built to help users log daily expenses, monitor spending habits, and work towards financial goals.</p>
+<h4 style="margin-top:20px; color:#e6c86e;">Key Features & Learning</h4>
+<ul>
+<li>Designed and built the MySQL database schema for storing user expenses and categories</li>
+<li>Fetched and displayed expense data from the database</li>
+<li>Integrated Highcharts to render interactive pie and bar charts per expense category</li>
+<li>Implemented OTP verification and email notifications for expenses nearing their limit</li>
 </ul>
 </div>
 </div>
